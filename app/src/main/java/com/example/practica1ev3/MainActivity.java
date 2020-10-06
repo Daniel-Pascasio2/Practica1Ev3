@@ -12,12 +12,14 @@ public class MainActivity extends AppCompatActivity {
     Button btnAvanza;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         btnAvanza=findViewById(R.id.btnAvanza);
+
 
         btnAvanza.setOnClickListener(new View.OnClickListener() {
             @Override
