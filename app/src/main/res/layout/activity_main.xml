@@ -9,6 +9,7 @@
     android:paddingRight="15dp"
     android:paddingLeft="15dp"
     android:paddingBottom="15dp"
+    android:background="@drawable/disenio_fondo"
     tools:context=".MainActivity">
 
     <ImageView
@@ -20,27 +21,29 @@
         android:layout_marginBottom="3dp"
         app:srcCompat="@mipmap/logo" />
 
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-black"
         android:gravity="center"
-        android:text="Tema: Encuesta Psicologica"
-        android:textColor="#000"
-        android:textSize="20sp"
+        android:text="Encuesta Psicologica"
+        android:textColor="#FFF"
+        android:textSize="25sp"
         android:textStyle="bold" />
-
 
     <TextView
         android:id="@+id/txt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="3dp"
+        android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:text="Calderon Guadron, Douglas Andres 25-2865-2016"
-        android:textColor="#000"
+        android:textColor="#FFF"
         android:textSize="14sp"
         android:textStyle="bold" />
 
@@ -50,10 +53,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="3dp"
+        android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:text="  Cerón Arias, Johanna Isabel 25-1656-2016"
-        android:textColor="#000"
-        android:textSize="14sp"
+        android:textColor="#FFF"
         android:textStyle="bold" />
 
     <TextView
@@ -62,9 +65,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="3dp"
+        android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:text="  Pascasio Calderon, José Daniel 25-1670-2016"
-        android:textColor="#000"
+        android:textColor="#FFF"
         android:textSize="14sp"
         android:textStyle="bold" />
 
@@ -74,9 +78,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="3dp"
+        android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:text="  Vásquez Chávez, Kevin Alexander 25-2281-2014"
-        android:textColor="#000"
+        android:textColor="#FFF"
         android:textSize="14sp"
         android:textStyle="bold" />
 
