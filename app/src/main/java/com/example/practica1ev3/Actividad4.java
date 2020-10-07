@@ -17,6 +17,7 @@ public class Actividad4 extends AppCompatActivity {
     Integer positivas, negativas;
     ArrayList<String> ListaA;
     ArrayList<String> ListaN;
+    private boolean[] Seleccion1=new boolean[7];
 
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -42,6 +43,7 @@ public class Actividad4 extends AppCompatActivity {
 
         ListaA=getIntent().getStringArrayListExtra("arregloP");
         ListaN=getIntent().getStringArrayListExtra("arregloN");
+        Seleccion1=getIntent().getBooleanArrayExtra("select");
 
         positivas = getIntent().getIntExtra("cantP",0);
         negativas = getIntent().getIntExtra("cantN",0);
@@ -72,6 +74,7 @@ public class Actividad4 extends AppCompatActivity {
                 Intent intent5 = new Intent(Actividad4.this, Actividad3.class);
                 intent5.putExtra("resA", ListaA);
                 intent5.putExtra("resN", ListaN);
+                intent5.putExtra("select", Seleccion1);
                 startActivity(intent5);
             }
         });

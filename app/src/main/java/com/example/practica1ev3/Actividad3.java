@@ -19,6 +19,9 @@ public class Actividad3 extends AppCompatActivity {
     ListView listA,listN;
     ImageView btnRetro,btnAvanzar;
     private Integer cantidadPositivas, cantidadNegativas;
+    private boolean[] Seleccion1=new boolean[7];
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +36,10 @@ public class Actividad3 extends AppCompatActivity {
         ListaA=new ArrayList<>();
         ListaN=new ArrayList<>();
 
+
         ListaA=getIntent().getStringArrayListExtra("resA");
         ListaN=getIntent().getStringArrayListExtra("resN");
+        Seleccion1=getIntent().getBooleanArrayExtra("select");
 
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, ListaA);
         listA.setAdapter(adapter);
@@ -47,7 +52,7 @@ public class Actividad3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent3=new Intent(Actividad3.this,Actividad2.class);
-
+                intent3.putExtra("select",Seleccion1);
                 startActivity(intent3);
             }
         });
@@ -63,14 +68,11 @@ public class Actividad3 extends AppCompatActivity {
                 intent4.putExtra("cantN",cantidadNegativas);
                 intent4.putExtra("arregloP", ListaA);
                 intent4.putExtra("arregloN", ListaN);
+                intent4.putExtra("select", Seleccion1);
                 startActivity(intent4);
 
             }
         });
-
-
-
-
 
 
 
