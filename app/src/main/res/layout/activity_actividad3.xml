@@ -45,6 +45,7 @@
         android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:text="Respuestas Afirmativas"
+        android:textColor="#000"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -64,6 +65,7 @@
             android:fontFamily="sans-serif-black"
             android:gravity="center"
             android:text="Respuestas Negativas"
+            android:textColor="#000"
             android:textSize="20sp"
             android:textStyle="bold" />
 

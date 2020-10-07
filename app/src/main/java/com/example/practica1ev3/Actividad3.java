@@ -18,6 +18,7 @@ public class Actividad3 extends AppCompatActivity {
     ArrayList<String> ListaN;
     ListView listA,listN;
     ImageView btnRetro,btnAvanzar;
+    private Integer cantidadPositivas, cantidadNegativas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,7 @@ public class Actividad3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent3=new Intent(Actividad3.this,Actividad2.class);
+
                 startActivity(intent3);
             }
         });
@@ -54,8 +56,14 @@ public class Actividad3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                //Intent intent4=new Intent(Actividad3.this,Actividad4.class);
-                //startActivity(intent4);
+                Intent intent4=new Intent(Actividad3.this,Actividad4.class);
+                cantidadPositivas = ListaA.size();
+                cantidadNegativas = ListaN.size();
+                intent4.putExtra("cantP",cantidadPositivas);
+                intent4.putExtra("cantN",cantidadNegativas);
+                intent4.putExtra("arregloP", ListaA);
+                intent4.putExtra("arregloN", ListaN);
+                startActivity(intent4);
 
             }
         });

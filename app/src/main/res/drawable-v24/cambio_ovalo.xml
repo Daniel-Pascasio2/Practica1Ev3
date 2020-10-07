@@ -2,6 +2,6 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:state_checked="false" android:drawable="@drawable/track_verde" />
-    <item android:state_checked="true" android:drawable="@drawable/track_rojo" />
+    <item android:state_checked="true" android:drawable="@drawable/track_verde" />
 
 </selector>
